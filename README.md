@@ -34,9 +34,9 @@ Setting the target score to a lower value like 200, will result in more misses i
 
 #### Discount factor
 
-The discount factor $\gamma$ determines the importance of future rewards, and the value should be $0\le\gamma<1$.  
+The discount factor ![gamma](https://render.githubusercontent.com/render/math?math=\gamma) determines the importance of future rewards, and the value should be ![0g1](https://render.githubusercontent.com/render/math?math=0\le\gamma%26lt%3B1).  
 Setting it too low will make it "short-sighted", only consider rewards nearest to its state. Setting it higher will make it consider more long-term rewards.  
-If the discount factor is set equal to or greater than 1, it may cause $V_\pi$ and $Q_\pi$ to diverge.
+If the discount factor is set equal to or greater than 1, it may cause ![Vpi](https://render.githubusercontent.com/render/math?math=V_\pi) and ![Qpi](https://render.githubusercontent.com/render/math?math=Q_\pi) to diverge.
 
 Experiments as below:
 
@@ -46,5 +46,5 @@ Experiments as below:
 |Training curve|![g09_curve](https://github.com/yuchen071/DQN-for-LunarLander-v2/blob/main/.readme_docs/gamma09_loss.png)|![g13_curve](https://github.com/yuchen071/DQN-for-LunarLander-v2/blob/main/.readme_docs/gamma13_loss.png)|  
 |Result| ![g09_gif](https://github.com/yuchen071/DQN-for-LunarLander-v2/blob/main/.readme_docs/gamma09.gif) | ![g13_gif](https://github.com/yuchen071/DQN-for-LunarLander-v2/blob/main/.readme_docs/gamma13.gif) |
 
-We can see that, $\gamma$ set to suboptimal values will result in slow training time and no convergence, and cause the ship to continue hovering and not land.  
-$\gamma$ set to greater than 1 will also cause it to fail to converge, and the ship only fired one side rocket and flew out of control.
+We can see that, ![gamma](https://render.githubusercontent.com/render/math?math=\gamma) set to suboptimal values will result in slow training time and no convergence, and cause the ship to continue hovering and not land.  
+![gamma](https://render.githubusercontent.com/render/math?math=\gamma) set to greater than 1 will also cause it to fail to converge, and the ship only fired one side rocket and flew out of control.
