@@ -6,7 +6,6 @@
 
 ## Dependencies
 ```
-Box2D==2.3.10
 gym==0.21.0
 imageio==2.13.5
 matplotlib==3.5.1
