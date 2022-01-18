@@ -6,13 +6,14 @@
 
 ## Dependencies
 ```
-gym==0.19.0
-matplotlib==3.3.4
-tqdm==4.62.2
-imageio==2.9.0
-torch==1.8.0
-numpy==1.19.2
-Pillow==8.4.0
+Box2D==2.3.10
+gym==0.21.0
+imageio==2.13.5
+matplotlib==3.5.1
+numpy==1.22.0
+Pillow==9.0.0
+torch==1.10.1+cu102
+tqdm==4.62.3
 ```
 
 ## How to use
